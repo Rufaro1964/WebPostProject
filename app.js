@@ -24,6 +24,14 @@ app.use(express.static("public"));
  
  })
 
+ app.get("/about",function(req,res){
+   res.render("about",{aboutPage : aboutContent});
+ })
+
+ app.get("/contact",function(req,res){
+  res.render("contact",{contactPage : contactContent});
+})
+
 
 
 
