@@ -33,7 +33,19 @@ app.use(express.static("public"));
 })
 
 
+app.get("/compose",function(req,res){
+  res.render("compose");
+})
 
+
+
+app.post("/compose",function(req,res){
+  const Post = {
+    Title :req.body.postTitle,
+    Body  : req.body.postBody
+  };
+
+})
 
 
 
